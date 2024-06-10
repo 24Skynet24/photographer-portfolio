@@ -21,8 +21,19 @@ html, body {
   height: 100%;
 }
 
-
+html {
+  font-size: 10px;
+}
 
 a {
   text-decoration: none;
+}
+
+button, input, a {
+  outline: none;
+  cursor: pointer;
+}
+
+button {
+  border: none;
 }
