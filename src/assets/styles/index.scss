@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import "../fonts/opensans/opensans.css";
 
 * {
@@ -5,6 +8,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
+  color: var(--var-white);
 }
 
 :root {
