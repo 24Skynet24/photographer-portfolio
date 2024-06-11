@@ -1,0 +1,14 @@
+.non_container {
+  background: var(--var-black);
+  padding: 18.4rem 10rem 11rem;
+
+  section.aside {
+    width: 28.7rem;
+
+    svg.logo {
+      height: 85vh;
+      width: 100%;
+      margin-bottom: 7.6rem;
+    }
+  }
+}
