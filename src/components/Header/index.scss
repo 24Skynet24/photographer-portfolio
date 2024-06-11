@@ -1,0 +1,45 @@
+header.header {
+  background: var(--var-black);
+  padding: 2.2rem 10rem;
+
+  ul {
+    gap: 10rem;
+
+    a {
+      font-size: 1.8rem;
+      transition: .2s;
+      position: relative;
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        background: var(--var-_yellow);
+        border-radius: 50%;
+        left: 50%;
+        top: 105%;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: .2s;
+      }
+
+      &:hover {
+        color: var(--var-_yellow);
+
+        &::after {
+          opacity: 1;
+        }
+      }
+    }
+
+    .is_active {
+      color: var(--var-_yellow);
+
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+}
