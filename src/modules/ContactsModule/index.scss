@@ -1,0 +1,30 @@
+.contacts_container {
+  width: 57rem;
+
+  h1 {
+    font-size: 6.4rem;
+    margin-bottom: 3rem;
+  }
+
+  form {
+    .flex.flex-col {
+      gap: 3rem 0;
+      margin-bottom: 5.2rem;
+    }
+
+    footer {
+      gap: 4rem;
+      span {
+        font-size: 2.4rem;
+      }
+
+      button {
+        font-size: 3rem;
+        background: var(--var-_yellow);
+        border: none;
+        border-radius: 10px;
+        padding: 2rem 4.4rem;
+      }
+    }
+  }
+}
