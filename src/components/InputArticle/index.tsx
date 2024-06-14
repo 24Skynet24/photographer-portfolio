@@ -1,6 +1,6 @@
 import FormInput from "../../ui/Inputs/FormInput/index";
-import "./index.scss"
 import FormTextarea from "../../ui/Inputs/FormTextarea/index";
+import "./index.scss"
 
 export default function InputArticle({placeholder, name, type = "text", title, target = true}) {
     const targetEl = () => {
@@ -11,7 +11,7 @@ export default function InputArticle({placeholder, name, type = "text", title, t
     return (
         <>
             <article className="input_box flex flex-col">
-                <span>{ title || "TEst" }</span>
+                <span>{ title }</span>
                 { targetEl() }
             </article>
         </>
