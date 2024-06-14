@@ -1,0 +1,19 @@
+.select_date {
+  position: relative;
+  padding: 1.6rem 2.4rem 1.6rem 1.6rem;
+  border: 2px solid var(--var-_yellow);
+  font-size: 1.6rem;
+  width: 32.8rem;
+  height: 5.6rem;
+  cursor: pointer;
+
+  span {
+    font-size: 1em;
+    color: var(--var-light_black);
+  }
+
+  svg {
+    width: 9.4px;
+    height: 6.1px;
+  }
+}
