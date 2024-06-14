@@ -1,0 +1,74 @@
+main.book_page {
+  padding: 11.3rem 13.4rem;
+
+  span, p, h1, h2 {
+    color: var(--var-black);
+  }
+
+  section {
+    margin-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:last-child {
+      margin-bottom: 0;
+      flex-direction: row;
+    }
+  }
+
+  h2 {
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
+
+  .title_block {
+    gap: 1rem;
+
+    h1 {
+      font-size: 3.6rem;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 2.4rem;
+    }
+  }
+
+  .booking_block {
+    &__title span {
+      font-size: 1.4rem;
+    }
+
+    &__wrap {
+      gap: 2rem 3rem;
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .booking_location {
+    .flex.items-center {
+      gap: 5rem;
+    }
+  }
+
+  .booking_price {
+    h2 {
+      margin-bottom: 2.9rem;
+    }
+
+    &__container {
+      gap: 6.8rem;
+    }
+  }
+
+  .booking_details .flex.items-center {
+    gap: 5rem;
+  }
+
+  .booking_buttons {
+    gap: 3rem;
+  }
+}

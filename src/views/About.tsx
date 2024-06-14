@@ -1,7 +1,13 @@
+import NonContentLayout from "../layouts/NonContent/index";
+import AboutModule from "../modules/AboutModule/index";
+
+
 export default function About() {
     return (
         <>
-            <div>About</div>
+            <NonContentLayout>
+                <AboutModule/>
+            </NonContentLayout>
         </>
     )
 }

@@ -1,0 +1,19 @@
+button.rounded_button {
+  background: none;
+  padding: 1.1rem 2.9rem;
+  border-radius: 56px;
+  border: 1px solid;
+  font-size: 1.8rem;
+}
+
+button.full {
+  background: var(--var-_yellow);
+  border-color: var(--var-_yellow);
+  color: var(--var-white);
+}
+
+button.empty {
+  background: var(--var-white);
+  border-color: var(--var-_yellow);
+  color: var(--var-_yellow);
+}
