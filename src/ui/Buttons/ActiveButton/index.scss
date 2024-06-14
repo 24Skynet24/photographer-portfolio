@@ -1,0 +1,15 @@
+.active_button {
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: .9rem 3.7rem;
+  background: none;
+  border: 1px solid var(--var-_yellow);
+  border-radius: 5px;
+  color: var(--var-black);
+  transition: .2s;
+}
+
+.active_button.is_active {
+  background: var(--var-_yellow);
+  color: var(--var-white);
+}
