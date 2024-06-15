@@ -1,0 +1,51 @@
+$p_x: 3.3rem;
+$p_y: .9rem;
+
+article.banner_txt_box {
+  padding: $p_y $p_x 0;
+  max-width: 43.2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    font-size: 7.2rem;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 3rem;
+  }
+
+  .line {
+    position: absolute;
+    background: var(--var-_yellow);
+  }
+
+  .line.top {
+    width: 45%;
+    height: 3px;
+    top: 0;
+    left: $p_x;
+  }
+
+  .line.top.top-right {
+    right: $p_x;
+    left: auto;
+  }
+
+  .line.right, .line.left {
+    height: 60%;
+    width: 3px;
+    top: $p_x;
+  }
+
+  .line.right {
+    right: 0;
+  }
+  .line.left {
+    left: 0;
+  }
+}
