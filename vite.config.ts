@@ -13,4 +13,12 @@ export default defineConfig({
       "@components": path.resolve(__dirname, "./src/components"),
     },
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        // Global import
+        additionalData: `@import "@assets/styles/mixins.scss";`
+      }
+    }
+  },
 })

@@ -44,7 +44,7 @@ export default function BookModule() {
 
                 <section className="booking_location">
                     <h2 className="mb-8">When and where is the photoshoot?</h2>
-                    <div className="flex items-center">
+                    <div className="booking_location_box flex items-center">
                         <BookSelect title={"Select date"}/>
                         <BookSelect title={"Select time"}/>
                         <BookInput {...bookInputsData[0]}/>

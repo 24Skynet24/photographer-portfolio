@@ -7,6 +7,15 @@
   height: 5.6rem;
   cursor: pointer;
 
+  @include _1280 {
+    width: 23rem;
+    font-size: 1.4rem;
+  }
+
+  @include _870 {
+    width: 100%;
+  }
+
   span {
     font-size: 1em;
     color: var(--var-light_black);

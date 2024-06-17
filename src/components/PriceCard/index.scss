@@ -4,6 +4,16 @@ article.price_card {
   border: 1px solid var(--var-black);
   padding: 3.2rem 7.1rem;
 
+  @include _1440 {
+    width: 25rem;
+    height: auto;
+  }
+
+  @include _1120 {
+    width: auto;
+    padding: 2rem 4rem;
+  }
+
   * {
     color: var(--var-black);
   }
@@ -28,6 +38,11 @@ article.price_card {
 
   ul li span {
     font-size: 1.6rem;
+
+    @include _1120 {
+      display: block;
+      text-align: center;
+    }
   }
 
   button {
@@ -38,5 +53,9 @@ article.price_card {
     cursor: pointer;
     font-size: 1.8rem;
     font-weight: 600;
+
+    @include _1440 {
+      margin-top: 2rem;
+    }
   }
 }
