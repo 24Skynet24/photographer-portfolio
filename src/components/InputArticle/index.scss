@@ -1,7 +1,15 @@
 .input_box {
   width: 57rem;
 
+  @include _1120 {
+    width: 100%;
+  }
+
   span {
     font-size: 2.5rem;
+
+    @include _1120 {
+      font-size: 2rem;
+    }
   }
 }
