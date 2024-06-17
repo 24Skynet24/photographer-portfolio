@@ -15,6 +15,11 @@
     @content;
   }
 }
+@mixin _870 {
+  @media screen and (max-width: 870px){
+    @content;
+  }
+}
 @mixin _768 {
   @media screen and (max-width: 768px){
     @content;
