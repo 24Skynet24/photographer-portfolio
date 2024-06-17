@@ -1,6 +1,10 @@
 .contacts_container {
   width: 57rem;
 
+  @include _1120 {
+    width: 100%;
+  }
+
   h1 {
     font-size: 6.4rem;
     margin-bottom: 3rem;
