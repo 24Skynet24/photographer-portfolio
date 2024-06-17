@@ -4,11 +4,19 @@
   h1 {
     font-size: 6.4rem;
     margin-bottom: 3rem;
+
+    @include _1440 {
+      font-size: 5.4rem;
+    }
   }
 
   p {
     font-size: 3.6rem;
     margin-bottom: 5.6rem;
+
+    @include _1440 {
+      font-size: 2.4rem;
+    }
 
     a {
       color: var(--var-_yellow);
