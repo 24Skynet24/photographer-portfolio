@@ -2,8 +2,16 @@ header.header {
   background: var(--var-black);
   padding: 2.2rem 10rem;
 
+  @include _1120 {
+    padding: 2.2rem 5rem;
+  }
+
   ul {
     gap: 10rem;
+
+    @include _1120 {
+      gap: 5rem;
+    }
 
     a {
       font-size: 1.8rem;
@@ -27,10 +35,6 @@ header.header {
 
       &:hover {
         color: var(--var-_yellow);
-
-        &::after {
-          opacity: 1;
-        }
       }
     }
 
