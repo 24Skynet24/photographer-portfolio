@@ -1,6 +1,10 @@
 main.book_page {
   padding: 11.3rem 13.4rem;
 
+  @include _1280 {
+    padding: 10rem 5rem;
+  }
+
   span, p, h1, h2 {
     color: var(--var-black);
   }
@@ -10,6 +14,10 @@ main.book_page {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include _870 {
+      margin-bottom: 7rem;
+    }
 
     &:last-child {
       margin-bottom: 0;
@@ -32,6 +40,7 @@ main.book_page {
 
     p {
       font-size: 2.4rem;
+      text-align: center;
     }
   }
 
@@ -49,8 +58,19 @@ main.book_page {
   }
 
   .booking_location {
-    .flex.items-center {
+    width: 100%;
+
+    &_box {
       gap: 5rem;
+
+      @include _1120 {
+        gap: 3rem;
+      }
+
+      @include _870 {
+        width: 70%;
+        flex-direction: column;
+      }
     }
   }
 
@@ -61,11 +81,34 @@ main.book_page {
 
     &__container {
       gap: 6.8rem;
+
+      @include _1440 {
+        align-items: stretch;
+      }
+
+      @include _1280{
+        gap: 5rem;
+      }
     }
   }
 
-  .booking_details .flex.items-center {
-    gap: 5rem;
+  .booking_details {
+    @include _870 {
+      width: 100%;
+    }
+
+    .flex.items-center {
+      gap: 5rem;
+
+      @include _1120 {
+        gap: 3rem;
+      }
+
+      @include _870 {
+        width: 70%;
+        flex-direction: column;
+      }
+    }
   }
 
   .booking_buttons {
