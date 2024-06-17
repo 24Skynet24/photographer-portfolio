@@ -8,18 +8,36 @@
   h1 {
     font-size: 6.4rem;
     margin-bottom: 3rem;
+
+    @include _1440 {
+      font-size: 5.4rem;
+    }
+
+    @include _870 {
+      font-size: 3.6rem;
+    }
   }
 
   form {
     .flex.flex-col {
       gap: 3rem 0;
       margin-bottom: 5.2rem;
+
+      @include _1120 {
+        gap: 2rem 0;
+        margin-bottom: 3rem;
+      }
     }
 
     footer {
       gap: 4rem;
+
       span {
         font-size: 2.4rem;
+
+        @include _1120 {
+          font-size: 2rem;
+        }
       }
 
       button {
@@ -28,6 +46,11 @@
         border: none;
         border-radius: 10px;
         padding: 2rem 4.4rem;
+
+        @include _1120 {
+          font-size: 2.4rem;
+          padding: 1.5rem 3.5rem;
+        }
       }
     }
   }
