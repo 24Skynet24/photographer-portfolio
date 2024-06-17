@@ -2,13 +2,30 @@
   background: var(--var-black);
   padding: 18.4rem 10rem 11rem;
 
+  @include _1120 {
+    padding: 10rem 5rem;
+    min-height: 90vh;
+  }
+
   section.aside {
-    width: 28.7rem;
+    width: 20rem;
 
     svg.logo {
-      height: 85vh;
+      height: 50rem;
       width: 100%;
       margin-bottom: 7.6rem;
+    }
+
+    @include _1120 {
+      display: none;
+    }
+  }
+
+  main {
+    max-width: 75%;
+
+    @include _1120 {
+      max-width: 100%;
     }
   }
 }
