@@ -20,23 +20,3 @@
     @content;
   }
 }
-@mixin _768 {
-  @media screen and (max-width: 768px){
-    @content;
-  }
-}
-@mixin _640 {
-  @media screen and (max-width: 640px){
-    @content;
-  }
-}
-@mixin _425 {
-  @media screen and (max-width: 425px){
-    @content;
-  }
-}
-@mixin _375 {
-  @media screen and (max-width: 375px){
-    @content;
-  }
-}
