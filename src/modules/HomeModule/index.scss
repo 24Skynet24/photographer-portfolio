@@ -46,6 +46,22 @@
   background-repeat: no-repeat;
   position: relative;
 
+  @include _1440 {
+    background-size: auto 170vh;
+  }
+  @include _1280 {
+    background-size: auto 150vh;
+  }
+  @include _1120 {
+    background-size: auto 130vh;
+  }
+  @media screen and (max-width: 990px){
+    background-size: auto 115vh;
+  }
+  @include _870 {
+    background-size: auto 100vh;
+  }
+
   &__container {
     padding-right: 10rem;
 
@@ -54,6 +70,11 @@
       margin-bottom: 3.8rem;
       max-width: 47.4rem;
       text-align: right;
+
+      @include _1120 {
+        font-size: 2.8rem;
+        max-width: 35rem;
+      }
     }
 
     .soc_links {
@@ -198,9 +219,27 @@
   }
 }
 
+.banner_0,
+.banner_1,
+.banner_2,
+.banner_3,
+.banner_4,
+.banner_5,
+.banner_6,
+.banner_7,
+.banner_8 {
+  @include _1120 {
+    height: 100vh;
+  }
+}
+
 footer.footer {
   background: var(--var-black);
   padding: 6.7rem 16.5rem 6.3rem;
+
+  @include _1120 {
+    padding: 5rem;
+  }
 
   button.top {
     margin-bottom: 2.6rem;
@@ -221,5 +260,9 @@ footer.footer {
     width: 100%;
     margin-bottom: 6.4rem;
     gap: 9rem;
+
+    @include _1120 {
+      gap: 5rem;
+    }
   }
 }
