@@ -2,6 +2,10 @@
   padding-right: 9rem;
   border-right: 3px solid var(--var-_yellow);
 
+  @include _1120 {
+    padding-right: 5rem;
+  }
+
   &:last-child {
     border-right: none;
     padding-right: 0;
@@ -10,11 +14,19 @@
   h3 {
     font-size: 6.4rem;
     font-weight: 700;
+
+    @include _1120 {
+      font-size: 4rem;
+    }
   }
 
   p {
     font-size: 2.4rem;
     font-weight: 300;
     max-width: 27rem;
+
+    @include _1120 {
+      font-size: 2rem;
+    }
   }
 }
